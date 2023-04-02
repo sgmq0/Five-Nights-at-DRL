@@ -18,11 +18,11 @@ public class CameraRotater : MonoBehaviour
         if (Input.GetMouseButton(0)) {
             xRot += Input.GetAxis("Mouse X") * rotationSpeed;
             yRot =0;
-            if (xRot < -20f) {
-                xRot = -20f;
+            if (xRot < -10f) {
+                xRot = -10f;
             }
-            if (xRot > 20f) {
-                xRot = 20f;
+            if (xRot > 10f) {
+                xRot = 10f;
             }
             transform.rotation = Quaternion.Euler(-yRot, xRot, 0f);
         }
